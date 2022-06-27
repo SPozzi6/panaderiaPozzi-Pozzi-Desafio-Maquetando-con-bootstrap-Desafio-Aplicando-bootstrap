@@ -5,7 +5,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 html {
@@ -16,112 +15,42 @@ body {
     background-color: #FFFFFA;
 }
 
-/*RESOLUCION 375PX*/
-
-/*INICIA GRID GENERAL*/
-.contenedorGeneral {
-    display: grid;
-    grid-template-columns: 1fr;
-	grid-template-rows: auto;
-    grid-template-areas:
-    "nav"
-    "header"
-    "section"
-    "productos"
-    "form"
-    "footer";
-}
-
-#nav {
-    grid-area: nav;
-}
-
-#header {
-    grid-area: header;
-}
-
-#section {
-    grid-area: section;
-}
-
-#productos {
-    grid-area: productos;
-}
-
-#form {
-    grid-area: form;
-}
-
-#footer {
-    grid-area: footer;
-}
-/* TERMINA GRID GENERAL*/
-
-/* INICIA BARRA DE NAVEGACION*/
 .headerPedidos {
     background-color: #FFFFFA;
     text-align: center;
     font-size: 1.5rem;
-    padding: 3px;
-    display: none;
-}   
+} 
 
-.contenedorNav {
+/* INCIA NAVBAR*/
+
+.bg-grey {
     background-color: #464646;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index:10;
-    padding: 6px;
 }
 
-/*NAV*/
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+/*LOGO DE LA NAV*/
+.logoPanaderia {
+    max-height: 50px;
+    margin: 3px;
 }
 
-    /*LOGO DE LA NAV*/
-    .logoPanaderia {
-        max-height: 40px;
-        margin: 3px;
+    /*A*/
+    .links-lista {
+        color: #FFFFFA;
+        text-decoration: none;
+        list-style: none;
+        font-weight: lighter;
+        font-size: 2rem;
     }
 
-        /*UL*/
-        .listaDesordenada {
-            list-style: none;
-            display: flex;
-            justify-content: space-evenly;
-            padding: 6px 0px;
-        }
+    /*HOVER A*/
+    .links-lista:hover {
+        color: #FF6600;
+        transition: 0.5s;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
-            /*LI*/
-            .itemsLista {
-                font-size: 1.1rem;
-                text-transform: uppercase;
-                width: max-content;
-                padding: 3px;
-            }
-        
-                /*A*/
-                .linksLista {
-                color: #FFFFFA;
-                text-decoration: none;
-                list-style: none;
-                font-weight: bold;
-            }
-
-            /*HOVER A*/
-            .linksLista:hover {
-                color: #FF6600;
-                transition: 0.5s;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-/*TERMINA BARRA DE NAVEGACION*/
+/*TERMINA NAVBAR*/
 
 /* INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
 .header {
@@ -322,326 +251,3 @@ body {
         padding-top: 6px;
     }
 /*TERMINA FOOTER*/
-
-
-/*----------------------------------------------------------------*/
-
-
-/*RESOLUCION 768px*/
-
-@media (min-width: 768px) {
-    
-/*INICIA GRID GENERAL*/
-.contenedorGeneral {
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "nav nav"
-    "header header"
-    "section section"
-    "productos productos"
-    "form form"
-    "footer footer";
-}
-/*TERMINAS GRID GENERAL*/
-
-/*INICIA BARRA DE NAVEGACION*/
-    .headerPedidos{
-        display: none;
-    }
-
-/*NAV*/        
-.nav {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px auto;
-}
-
-    /*LOGO DE LA NAV*/        
-    .logoPanaderia {
-        max-height: 40px;
-        margin-left: 20px;
-    }        
-
-        /*UL*/           
-        .listaDesordenada {
-            margin-right: 20px;
-            align-items: center;
-        }
-            /*LI*/           
-            .itemsLista {
-                font-size: 1.3rem;
-                margin: 0px 4px;
-            }
-/*TERMINA BARRA DE NAVEGACION*/
-
-/*COMIENZA CONTENIDO MAIN*/
-
-/*INICA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
-.h1Header {
-    font-size: 3.5rem;
-}
-/*INICA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
-
-/*INICIA TITULOS SECUNDARIOS*/
-.h2Titulo {
-    font-size: 2rem;
-}
-
-.h3Subtitulo {
-    font-size: 1.7rem;
-}
-/*TERMINA TITULOS SECUNDARIOS*/
-
-/*INICIA SECCIONES*/
-.contenedorArticulos {
-    align-self: center;
-    width: 80%;
-}
-
-    .articulo{
-        width: 100%;
-    }
-/*TERMINA SECCIONES*/
-
-/*INICIA FORMULARIO Y CONTACTO*/
-.formulario {
-    width: 80%;
-    align-self: center;
-}
-
-.mapa {
-    height: 400px;
-}
-/*TERMINA FORMULARIO Y CONTACTO*/
-
-/*INICIA SECCION PRODUCTOS*/
-.contenedorProductos {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-    .producto {
-        width: 50%;
-    }
-
-    .imagen {
-        max-width: 330px;
-    }
-/*TERMINA SECCION PRODUCTOS*/
-
-}
-
-
-/*----------------------------------------------------------------*/
-
-
-/*RESOLUCION 1024PX*/
-
-@media (min-width: 1024px) {
-
-/*INICIA GRID GENERAL*/
-.contenedorGeneral {
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "nav nav nav nav"
-    "header header header header"
-    "section section section section"
-    "productos productos productos productos"
-    "form form form form"
-    "footer footer footer footer";
-}
-/*TERMINA GRID GENERAL*/
-
-/*INICIA BARRA DE NAVEGACION*/
-    .headerPedidos{
-        display: block;
-    }
-
-        /*LOGO DE LA NAV*/
-        .logoPanaderia {
-            max-height: 50px;
-            margin-left: 40px;
-        }
-
-            /*UL*/
-            .listaDesordenada {
-                margin-right: 40px;
-                align-items: center;
-            }
-
-                /*LI*/           
-                .itemsLista {
-                    font-size: 1.5rem;
-                    margin: 0px 6px;
-                }
-/*TERMINA BARRA DE NAVEGACION*/
-
-/*INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
-.h1Header {
-    font-size: 5rem;
-}
-/*TERMINA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
-
-.h2Titulo {
-    font-size: 2.5rem;
-}
-
-.h3Subtitulo {
-    font-size: 2rem;
-}
-/*INICIA TITULOS SECUNDARIOS*/
-
-/*INICIA SECCIONES*/
-    .contenedorArticulos {
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-/*TERMINA SECCIONES*/
-
-/*INICIA FORMULARIO Y CONTACTO*/
-.formulario {
-    width: 100%;
-}
-/*TERMINA FORMULARIO Y COTACTO*/
-
-/*INICIA SECCION PRODUCTOS*/
-    .producto {
-        width: 30%;
-    }
-
-    .imagen {
-        max-width: 300px;
-    }
-
-    .imagen:hover {
-        transform: scale(1.03);
-        transition: 1s;
-        cursor: pointer;
-    }
-
-        .infoProducto {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-/*TERMINA SECCION PRODUCTOS*/
-}
-
-
-/*----------------------------------------------------------------*/
-
-
-/*INICIA RESOLUCION 1200px*/
-
-@media (min-width: 1200px) {
-    
-/*INICIA GRID GENERAL*/
-.contenedorGeneral {
-    display: grid;
-    grid-template-columns: repeat (5, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "nav nav nav nav"
-    "header header header header"
-    "section section section section"
-    "productos productos productos productos"
-    "form form form form"
-    "footer footer footer footer";
-}
-/*INICIA GRID GENERAL*/
-
-/*INICIA BARRA DE NAVEGACION*/
-    .headerPedidos {
-        display: block;
-    }
-    
-    /*NAV*/
-    .nav {
-        max-width: 1200px;
-    }
-    
-    /*LOGO DE LA NAV*/
-    .logoPanaderia {
-        max-height: 50px;
-    }
-
-        /*LI*/           
-        .itemsLista {
-            font-size: 1.5rem;
-            margin: 0px 6px;
-        }
-/*TERMINA BARRA DE NAVEGACION*/
-
-/*INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
-.h1Header {
-font-size: 6rem;
-}
-/*TERMINA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
-
-/*INICIA TITULOS SECUNDARIOS*/
-.h2Titulo {
-    font-size: 2.7rem;
-}
-
-.h3Subtitulo {
-    font-size: 2.3rem;
-}
-/*TERMINA TITULOS SECUNDARIOS*/
-
-/*INICIA SECCIONES*/
-.articulo {
-    width: 30%;
-}
-/*TERMINA SECCION PRODUCTOS*/
-
-/*INICIA FORMULARIO Y CONTACTO*/
-.formulario {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-    .contenedorCasillas {
-        width: 45%;
-    }
-
-    .map {
-        width: 45%;
-        align-self: flex-start;
-    }
-
-        .botonEnviar {
-            width: 50%;
-            align-self: center;
-        }
-/*TERMINA FORMULARIO Y CONTACTO*/
-
-/*INICIA SECCION PRODUCTOS*/
-.contenedorProductos {
-flex-direction: row;
-}
-
-    .producto {
-        width: 25%;
-    }
-
-    .imagen{
-        padding: 24px;
-        max-width: 400px;
-    }
-
-    .imagen:hover {
-        transform: scale(1.05);
-        transition: 1s;
-        cursor: pointer;
-    }
-    /*TERMINA SECCION PRODUCTOS*/
-
-}
