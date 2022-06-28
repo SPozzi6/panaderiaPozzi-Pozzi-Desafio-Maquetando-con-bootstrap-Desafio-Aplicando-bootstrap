@@ -21,7 +21,7 @@ body {
     font-size: 1.5rem;
 } 
 
-/* INCIA NAVBAR*/
+/*------------------INCIA NAVBAR------------------*/
 
 .bg-grey {
     background-color: #464646;
@@ -50,14 +50,16 @@ body {
         cursor: pointer;
     }
 
-/*TERMINA NAVBAR*/
+/*------------------TERMINA NAVBAR------------------*/
 
-/* INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
+/*------------------INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL------------------*/
+
 .header {
     width: 100%;
     position: relative;
     text-align: center;
     display: inline-block;
+    overflow: hidden;
 }
     
     .h1Header {
@@ -69,166 +71,79 @@ body {
         font-size: 2.7rem;
         transform: translate(-50%, -50%);
         width: 100%;
+        transition: 0.5s;
     }
     
     .imagenHeader {
         width: 100%;
         }
-/*TERMINA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
 
-/* INICIA TITULOS SECUNDARIOS*/
-.h2Titulo {
+/*------------------TERMINA IMAGEN PRINCIPAL Y TITULO PRINCIPAL------------------*/
+
+/*------------------INICIA TITULOS SECUNDARIOS------------------*/
+
+    .h2Titulo {
     color: #464646;
     font-size: 1.5rem;
     text-align: center;
     padding: 6px;
+    transition: 0.5s;
 }
 
-.h3Subtitulo {
-    font-size: 1.7rem;
-    text-decoration: underline;
-    padding: 6px;
-}
-/* TERMINA TITULOS SECUNDARIOS*/
-
-/*INICIA SECCIONES*/
-.contenedorSeccion {
-    font-size: 1.5rem;
-    color: #464646;
-    display: flex;
-    flex-direction: column;
-    margin: 12px;
-}
-
-    .contenedorArticulos {
-        display: flex;
-        flex-direction: column;
+    .h3Subtitulo {
+        font-size: 1.7rem;
+        text-decoration: underline;
+        padding: 6px;
+        text-align: center;
+        transition: 0.5s;
     }
 
-        .articulo {
-            text-align: center;
-            padding: 6px;
-        }
+/*------------------TERMINA TITULOS SECUNDARIOS------------------*/
 
-            .imagenServiciosNosotros {
-                padding: 6px;
-            }
+/*------------------INICIA SECCIONES------------------*/
 
-            .texto{
-                font-size: 1.5rem;
-                padding: 3px;
-                text-align: center;
-            }
-/*TERMINA SECCIONES*/
-
-/*INICIA SECCION PRODUCTOS*/
-.contenedorProductos {
+.container-section {
     display: flex;
     flex-direction: column;
-    color: #464646;
-    font-size: 1.5rem;
-    padding: 0px;
-    margin: 12px;
+    justify-content: center;
 }
 
-    .producto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 6px;
+    .articulo {
         width: 100%;
     }
 
-        .infoProducto {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
+        .imagenServiciosNosotros {
+            text-align: center;
         }
 
-            .imagen {
-                width: 100%;
-                max-width: 450px;
-            }
+        .texto {
+            font-size: 1.5rem;
+            padding: 6px;
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+        }
 
-                .botonComprar {
-                    font-size: 1.5rem;
-                    padding: 3px;
-                    width: 100px;
-                    border-radius: 5px;
-                    border-style: solid;
-                    margin: 6px 0px;
-                }
+/*------------------TERMINA SECCIONES------------------*/
 
-                .botonComprar:hover {
-                    background-color: #FF6600;
-                    transition: 0.5s;
-                    color: white;
-                }
-/*TERMINA SECCION PRODUCTOS*/
+/*------------------INICIA FORMULARIO------------------*/
 
-/*INICIO FORMULARIO Y CONTACTO*/
-.contenedorFormulario {
-    color: #464646;
-    display: flex;
-    flex-direction: column;
-    margin: 12px;
+/*------------------TERMINA FORMULARIO------------------*/
+
+/*------------------INICIA PRODUCTOS------------------*/
+
+.imagen-producto {
+    text-align: center;
 }
 
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 6px;
-    }
+.imagen-producto-width {
+    width: 100%;
+    max-width: 400px;
+}
 
-        .contenedorCasillas {
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-            border: none;
-            padding: 6px;
-        }
+/*------------------INICIA PRODUCTOS------------------*/
 
-            .casilla {
-                font-size: 1.5rem;
-                padding: 6px;
-            }
-
-            .inputCasilla {
-                font-size: 1.5rem;
-                padding: 3px;
-                margin: 0px 6px;
-                border-radius: 3px;
-                border-style: solid;
-            }
-
-            .botonEnviar {
-                font-size: 1.5rem;
-                padding: 3px;
-                width: 100%;
-                border-radius: 5px;
-                border-style: solid;
-                margin: 6px 0px;
-            }
-
-                .botonEnviar:hover {
-                    background-color: #FF6600;
-                    transition: 0.5s;
-                    color: white;
-                }
-
-        .map {
-            width: 100%;
-            overflow: hidden;
-            padding: 6px;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-        }
-/*TERMINA FORMULARIO Y CONTACTO*/
-
-/*EMPIEZA FOOTER*/
+/*------------------EMPIEZA FOOTER------------------*/
 .contenedorFooter{
     font-size: 1.5rem;
     color: #464646;
@@ -250,4 +165,60 @@ body {
         text-align: center;
         padding-top: 6px;
     }
-/*TERMINA FOOTER*/
+/*------------------TERMINA FOOTER------------------*/
+
+/*-----------------------------------------------------------*/
+
+/*RESOLUCION 768*/
+
+/*------------------INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL------------------*/
+
+@media (min-width: 768px) {
+
+        .h1Header {
+        font-size: 3.5rem;
+    }
+
+/*------------------TERMINE IMAGEN PRINCIPAL Y TITULO PRINCIPAL------------------*/
+
+/*------------------INICIA TITULOS SECUNDARIOS------------------*/
+
+.h2Titulo {
+    font-size: 2rem;
+}
+
+.h3Subtitulo {
+    font-size: 2.5rem;
+}
+
+/*------------------TERMINA TITULOS SECUNDARIOS------------------*/
+
+/*------------------INICIA SECCIONES------------------*/
+
+.container-section {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .articulo {
+        width: 33%;
+    }
+
+    .texto {
+        font-size: 1.7rem;
+    }
+
+/*------------------TERMINA SECCIONES------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+}
