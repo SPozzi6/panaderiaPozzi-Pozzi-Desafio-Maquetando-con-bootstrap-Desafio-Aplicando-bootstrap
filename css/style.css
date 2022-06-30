@@ -12,7 +12,9 @@ html {
 }
 
 body {
-    background-color: #FFFFFA;
+    /*background-color: #FFFFFA;*/
+    background-image: url("../images/bg-image/bg-image.png");
+    background-attachment: fixed;
 }
 
 .header-pedidos {
@@ -129,7 +131,7 @@ body {
 /*INICIA FORMULARIO*/
 
 .mapa {
-    height: 400px;
+    height: 300px;
 }
 
 .button:hover {
@@ -175,6 +177,11 @@ body {
         padding-top: 6px;
     }
 
+    .text-bold {
+        font-weight: bold;
+        color: #464646;
+    }
+
 /*TERMINA FOOTER*/
 
 
@@ -212,15 +219,6 @@ body {
 
 /*INICIA SECCIONES*/
 
-.contenedor-section {
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-    .articulo {
-        width: 33%;
-    }
-
     .texto {
         font-size: 1.7rem;
     }
@@ -239,7 +237,31 @@ body {
 
 /*------------------TERMINA RESOLUCION 768px------------------*/
 
+/*------------------INICIA RESOLUCION 992px------------------*/
 
+@media (min-width: 992px) {
+
+/*INICIA SECCIONES*/
+
+.contenedor-section {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+    .articulo {
+        width: 33%;
+    }
+
+    .texto {
+        font-size: 1.7rem;
+    }
+
+/*TERMINA SECCIONES*/
+
+}
+
+
+/*------------------TERMINA RESOLUCION 992px------------------*/
 
 
 /*------------------INICIA RESOLUCION 1200px------------------*/
