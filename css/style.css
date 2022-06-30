@@ -21,7 +21,7 @@ body {
     font-size: 1.5rem;
 } 
 
-/*------------------INCIA NAVBAR------------------*/
+/*INCIA NAVBAR*/
 
 .bg-grey {
     background-color: #464646;
@@ -50,9 +50,9 @@ body {
         cursor: pointer;
     }
 
-/*------------------TERMINA NAVBAR------------------*/
+/*TERMINA NAVBAR*/
 
-/*------------------INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL------------------*/
+/*INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
 
 .header {
     width: 100%;
@@ -71,23 +71,23 @@ body {
         font-size: 2.7rem;
         transform: translate(-50%, -50%);
         width: 100%;
-        transition: 0.5s;
+        transition: 1s;
     }
     
     .imagen-header {
         width: 100%;
         }
 
-/*------------------TERMINA IMAGEN PRINCIPAL Y TITULO PRINCIPAL------------------*/
+/*TERMINA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
 
-/*------------------INICIA TITULOS SECUNDARIOS------------------*/
+/*INICIA TITULOS SECUNDARIOS*/
 
     .h2-titulo {
     color: #464646;
     font-size: 1.5rem;
     text-align: center;
     padding: 6px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
     .h3-titulo {
@@ -95,14 +95,14 @@ body {
         text-decoration: underline;
         padding: 6px;
         text-align: center;
-        transition: 0.5s;
+        transition: 1s;
     }
 
-/*------------------TERMINA TITULOS SECUNDARIOS------------------*/
+/*TERMINA TITULOS SECUNDARIOS*/
 
-/*------------------INICIA SECCIONES------------------*/
+/*INICIA SECCIONES*/
 
-.container-section {
+.contenedor-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,9 +124,9 @@ body {
             margin: auto;
         }
 
-/*------------------TERMINA SECCIONES------------------*/
+/*TERMINA SECCIONES*/
 
-/*------------------INICIA FORMULARIO------------------*/
+/*INICIA FORMULARIO*/
 
 .mapa {
     height: 400px;
@@ -137,9 +137,9 @@ body {
     transition: 0.5s;
 }
 
-/*------------------TERMINA FORMULARIO------------------*/
+/*TERMINA FORMULARIO*/
 
-/*------------------INICIA PRODUCTOS------------------*/
+/*INICIA PRODUCTOS*/
 
 .imagen-producto {
     text-align: center;
@@ -150,9 +150,9 @@ body {
     max-width: 400px;
 }
 
-/*------------------INICIA PRODUCTOS------------------*/
+/*TERMINA PRODUCTOS*/
 
-/*------------------EMPIEZA FOOTER------------------*/
+/*INICIA FOOTER*/
 .contenedor-footer{
     font-size: 1.5rem;
     color: #464646;
@@ -174,39 +174,47 @@ body {
         text-align: center;
         padding-top: 6px;
     }
-/*------------------TERMINA FOOTER------------------*/
 
-/*-----------------------------------------------------------*/
+/*TERMINA FOOTER*/
 
-/*RESOLUCION 768*/
 
-/*------------------INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL------------------*/
+
+
+/*------------------INICIA RESOLUCION 768px------------------*/
+
+
+
 
 @media (min-width: 768px) {
 
+/*INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
+
         .h1-header {
-        font-size: 3.5rem;
+        font-size: 4rem;
+        transition: 1s;
     }
 
-/*------------------TERMINE IMAGEN PRINCIPAL Y TITULO PRINCIPAL------------------*/
+/*TERMINA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
 
-/*------------------INICIA TITULOS SECUNDARIOS------------------*/
+/*INICIA TITULOS SECUNDARIOS*/
 
 .h2-titulo {
     font-size: 2rem;
+    transition: 1s;
 }
 
 .h3-titulo {
     font-size: 2.5rem;
+    transition: 1s;
 }
 
-/*------------------TERMINA TITULOS SECUNDARIOS------------------*/
+/*TERMINA TITULOS SECUNDARIOS*/
 
-/*------------------INICIA SECCIONES------------------*/
+/*INICIA SECCIONES*/
 
-.container-section {
+.contenedor-section {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
     .articulo {
@@ -217,17 +225,80 @@ body {
         font-size: 1.7rem;
     }
 
-/*------------------TERMINA SECCIONES------------------*/
+/*TERMINA SECCIONES*/
 
+/*INICIA PRODUCTOS*/
 
+    .producto {
+        width: 40%;
+    }
 
-
-
-
-
-
-
-
-
+/*TERMINA PRODUCTOS*/
 
 }
+
+/*------------------TERMINA RESOLUCION 768px------------------*/
+
+
+
+
+/*------------------INICIA RESOLUCION 1200px------------------*/
+
+
+
+
+@media (min-width: 1200px) {
+
+/*INICIA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
+
+    .h1-header {
+        font-size: 5rem;
+    }
+
+/*TERMINA IMAGEN PRINCIPAL Y TITULO PRINCIPAL*/
+
+/*INICIA TITULOS SECUNDARIOS*/
+
+    .h2-titulo {
+        font-size: 2.5rem;
+        transition: 1s;
+    }
+
+    .h3-titulo {
+        font-size: 3rem;
+        transition: 1s;
+    }
+
+/*TERMINA TITULOS SECUNDARIOS*/
+
+/*INICIA PRODUCTOS*/
+
+    .producto {
+        width: 22%;
+    }
+
+/*TERMINA PRODUCTOS*/
+
+/*INICIA FORMULARIO*/
+
+.contenedor-form {
+    display: flex;
+    flex-direction: row;
+}
+    .contenedor-casillas {
+        width: 50%;
+    }
+
+    .contenedor-mapa {
+        width: 50%;
+    }
+    
+        .mapa {
+            height: 460px;
+        }
+
+/*TERMINA FORMULARIO*/
+
+}
+
+/*------------------TERMINA RESOLUCION 1200px------------------*/
