@@ -227,6 +227,11 @@ body {
 
 /*INICIA PRODUCTOS*/
 
+.contenedor-section {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
     .producto {
         width: 40%;
     }
